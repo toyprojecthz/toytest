@@ -5,7 +5,7 @@ function setShare() {
     var resultAlt = resultImg.firstElementChild.alt;
     const shareTitle = "테스트결과"
     const shareDes = infoList[resultAlt].name;
-    const shareImage = url + "img/image-" + resultAlt + "png";
+    const shareImage = url + "img/image-" + resultAlt + "jpg";
     const shareURL = url + "page/result-" + resultAlt + ".html";
 
 }
