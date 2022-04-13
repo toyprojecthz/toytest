@@ -1,0 +1,19 @@
+#qna {
+    display: none;
+}
+
+#result {
+    display: none;
+}
+
+.status {
+    height: 10px;
+    width: 100%;
+    background-color: #ddd;
+    display: block;
+}
+
+.statusBar {
+    height: 100%;
+    background-color: red;
+}
