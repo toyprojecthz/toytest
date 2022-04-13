@@ -2,7 +2,7 @@ const main = document.querySelector("#main");
 const qna = document.querySelector("#qna");
 const result = document.querySelector("#result");
 const endPoint = 4; //총 질문 갯수
-const select = [0, 0, 0, 0, 0, 0, 0, 0];//총 타입 갯수
+const select = [0, 0, 0, 0, 0, 0, 0, 0]; //총 타입 갯수
 
 function calResult() {
     var result = select.indexOf(Math.max(...select));
@@ -10,13 +10,24 @@ function calResult() {
     console.log(result)
     return result;
 }
-function setResult(){
+
+function setResult() {
     let point = calResult();
     const resultName = document.querySelector(".resultName");
-    resultName.innerHTML =  infoList[point].name;
+    resultName.innerHTML = infoList[point].name;
+
+    var resultImg = document.createElement("img");
+    const imgDiv = document.querySelector("#resultImg");
+    var imgURL = "img/image-" + point + ".png";
+    resultImg.src = imgURL;
+    resultImg.alt = point;
+    resultImg.classList.add("img-fluid");
+    imgDiv.appendChild(resultImg);
+
     const resultDesc = document.querySelector(".resultDesc");
-    resultDesc.innerHTML =  infoList[point].desc;
+    resultDesc.innerHTML = infoList[point].desc;
 }
+
 function goResult() {
     qna.style.display = "none";
     result.style.display = "block";
