@@ -21,24 +21,21 @@
 
 <body>
     <? include "./head.php" ?>
-    <section class="start-visual">
+    <section class="start-visual" id="intro">
         <div class="visual">
             <iframe src="https://giphy.com/embed/3orif8cOQneHIBN8Zi" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/black-girls-ladylike-lady-like-3orif8cOQneHIBN8Zi">via GIPHY</a></p>
         </div>
         <h2>친구들이 생각하는 나는 어떤 친구?!</h2>
         <p>MBTI를 기반으로한 팩트폭격 소름돋는 테스트</p>
-        <a href=""><b>시작하기!</b><span>(소요시간 : 3분)</span></a>
-    </section>
-    <section id="main">
-        <h2>TEST</h2>
-        <button class="btn" onclick="js:begin()">START</button>
+        <a href="js:begin()"><b>시작하기!</b><span>(소요시간 : 3분)</span></a>
     </section>
     <section id="qna">
         <div class="status">
             <div class="statusBar"></div>
+            <span class="numb"></span>
         </div>
         <div class="qBox"></div>
-        <div class="answerBox"></div>
+        <div class="aBox"></div>
     </section>
     <section id="result">
         <div id="resultImg"></div>
