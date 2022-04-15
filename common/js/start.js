@@ -6,8 +6,6 @@ const select = [0, 0, 0, 0, 0, 0, 0, 0]; //총 타입 갯수
 
 function calResult() {
     var result = select.indexOf(Math.max(...select));
-    console.log(select)
-    console.log(result)
     return result;
 }
 

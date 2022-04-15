@@ -5,9 +5,9 @@ function setShare() {
     var resultAlt = resultImg.firstElementChild.alt;
     const shareTitle = "테스트결과"
     const shareDes = infoList[resultAlt].name;
-    const shareImage = url + "img/image-" + resultAlt + "jpg";
-    const shareURL = url + "page/result-" + resultAlt + ".html";
-    
+    const shareImage = '"' + url + "img/image-" + resultAlt + ".jpg" + '"';
+    const shareURL = '"' + url + 'page/result-' + resultAlt + '.html' + '"';
+
     Kakao.Link.sendDefault({
         objectType: 'feed',
         content: {
@@ -15,15 +15,16 @@ function setShare() {
             description: shareDes,
             imageUrl: shareImage,
             link: {
-                mobileWebUrl: shareURL,
-                WebUrl: shareURL,
+                mobileWebUrl: "https://toyprojecthz.github.io/simple-test/",
+                webURL: "https://toyprojecthz.github.io/simple-test/",
             },
         },
 
         buttons: [{
             title: '결과 확인하기',
             link: {
-                mobileWebUrl: 'https://developers.kakao.com',
+                mobileWebUrl: "https://toyprojecthz.github.io/simple-test/",
+                webURL: "https://toyprojecthz.github.io/simple-test/",
             },
         }]
     });
