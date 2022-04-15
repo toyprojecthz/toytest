@@ -1,4 +1,4 @@
-const main = document.querySelector("#main");
+const main = document.querySelector("#intro");
 const qna = document.querySelector("#qna");
 const result = document.querySelector("#result");
 const endPoint = 4; //총 질문 갯수
