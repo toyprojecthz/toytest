@@ -16,10 +16,10 @@ function setShare() {
             title: shareTitle,
             description: shareDes,
             imageUrl: shareImage,
-            link: {
-                mobileWebUrl: shareURL,
-                webUrl: shareURL,
-            },
+            // link: {
+            //     mobileWebUrl: shareURL,
+            //     webUrl: shareURL,
+            // },
         },
 
         buttons: [{
