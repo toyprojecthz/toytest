@@ -1,6 +1,3 @@
-Kakao.init('3fcf47defed830f6458c713c6391420b');
-Kakao.isInitialized();
-
 const url = "https://toyprojecthz.github.io/simple-test/"
 
 function setShare() {
