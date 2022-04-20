@@ -17,16 +17,16 @@ function setShare() {
             description: shareDes,
             imageUrl: shareImage,
             link: {
-                mobileWebUrl: shareURL,
-                webUrl: shareURL,
+                mobileWebUrl: "https://toyprojecthz.github.io/toytest/friendPersona/",
+                webUrl: "https://toyprojecthz.github.io/toytest/friendPersona/",
             },
         },
 
         buttons: [{
             title: '결과 확인하기',
             link: {
-                mobileWebUrl: shareURL,
-                webUrl: shareURL,
+                mobileWebUrl: "https://toyprojecthz.github.io/toytest/friendPersona/",
+                webUrl: "https://toyprojecthz.github.io/toytest/friendPersona/",
             },
         }]
     });
