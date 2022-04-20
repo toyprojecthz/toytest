@@ -1,6 +1,5 @@
-const url = "https://toyprojecthz.github.io/toytest/friendPersona/"
-
 function setShare() {
+    const url = "https://toyprojecthz.github.io/toytest/friendPersona/"
     var resultImg = document.querySelector("#resultImg");
     var resultAlt = resultImg.firstElementChild.alt;
     console.log(resultAlt)
@@ -17,7 +16,7 @@ function setShare() {
         content: {
             title: shareTitle,
             description: shareDes,
-            imageUrl: "https://toyprojecthz.github.io/toytest/friendPersona/img/image-5.jpg",
+            imageUrl: shareImage,
             link: {
                 webUrl: url,
                 mobileWebUrl: url,
