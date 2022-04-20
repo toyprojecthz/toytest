@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <? include "../inc/head.html" ?>
+    <title>금쪽이 테스트!</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <section id="intro" class="outter intro-wrap">
+            <article class="cnt-inner">
+                <div class="visual">
+                    <img src="./img/mybaby-ico.png" alt="우리금쪽이"> </div>
+                <h2><b>금쪽이</b> 테스트</h2>
+                <p>왔구나 우리 <b>금쪽이</b>~!!<br>아래의 동그랗고 길다란 버튼을 눌러<br><b>재밌는 테스트를 시작</b> 해보자!</p>
+                <span>(소요시간 : 3분)</span>
+                <a href="javascript:begin()" class="common-btn aqua"><b>테스트 시작!</b></a>
+            </article>
+        </section>
+        <section id="qna" class="outter qna-wrap">
+            <div class="status-wrap">
+                <ul class="top">
+                    <li>금쪽아 이만큼 남았단다</li>
+                    <li class="numb"><span>1</span>/<span></span></li>
+                </ul>
+                <div class="statusBar aqua"><span></span></div>
+            </div>
+            <article class="cnt-inner">
+                <div class="qBox"></div>
+                <div class="aBox aqua"></div>
+            </article>
+        </section>
+        <section id="result" class="outter result-wrap">
+            <article class="cnt-inner">
+                <div id="resultImg" class="img"></div>
+                <div class="resultTitle"></div>
+                <div class="resultDesc"></div>
+                <div class="share-wrap">
+                    <h3>결과가 탐탁지 않아 열받나요?<br>그럼 <b>친구에게도 공유</b>해보세요! 캬캬</h3>
+                    <button type="button" onclick="js:setShare()" class="share-btn"><b class="ico"><i
+                                class="xi-kakaotalk"></i></b><span>카카오톡으로
+                            공유하기!</span></button>
+                </div>
+            </article>
+        </section>
+    </div>
+    <script src="../common/js/geumjjock-data.js"></script>
+    <script src="../common/js/geumjjock-start.js"></script>
+    <script src="../common/js/geumjjock-share.js"></script>
+
+</body>
+
+</html>
