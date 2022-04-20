@@ -15,7 +15,7 @@ function setShare() {
         content: {
             title: shareTitle,
             description: shareDes,
-            imageUrl: shareImage,
+            imageUrl: "https://toyprojecthz.github.io/toytest/friendPersona/img/image-5.jpg",
             // link: {
             //     mobileWebUrl: shareURL,
             //     webUrl: shareURL,
