@@ -1,12 +1,12 @@
-const url = "https://toyprojecthz.github.io/simple-test/"
+const url = "https://toyprojecthz.github.io/simple-test/friendPersona/"
 
 function setShare() {
     var resultImg = document.querySelector("#resultImg");
     var resultAlt = resultImg.firstElementChild.alt;
-    const shareTitle = "테스트결과"
+    const shareTitle = "금쪽이 테스트!"
     const shareDes = infoList[resultAlt].title;
-    const shareImage = '"' + "https://toyprojecthz.github.io/simple-test/" + "img/image-" + resultAlt + ".jpg" + '"';
-    const shareURL = '"' + "https://toyprojecthz.github.io/simple-test/" + 'result/result-' + resultAlt + '.html' + '"';
+    const shareImage = '"' + url + "img/image-" + resultAlt + ".jpg" + '"';
+    const shareURL = '"' + url + 'result/result-' + resultAlt + '.html' + '"';
     Kakao.Link.sendDefault({
         objectType: 'feed',
         content: {
