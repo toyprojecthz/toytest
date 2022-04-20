@@ -4,10 +4,9 @@
 <head>
     <div data-include-path="../inc/head.html"></div>
     <script>
- 
-        window.addEventListener('load', function() {
+        window.addEventListener('load', function () {
             var allElements = document.getElementsByTagName('*');
-            Array.prototype.forEach.call(allElements, function(el) {
+            Array.prototype.forEach.call(allElements, function (el) {
                 var includePath = el.dataset.includePath;
                 if (includePath) {
                     var xhttp = new XMLHttpRequest();
@@ -21,7 +20,11 @@
                 }
             });
         });
- 
+    </script>
+    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+    <script>
+        Kakao.init('3fcf47defed830f6458c713c6391420b');
+        Kakao.isInitialized();
     </script>
     <title>금쪽이 테스트!</title>
 </head>

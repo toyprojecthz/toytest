@@ -1,3 +1,6 @@
+Kakao.init('3fcf47defed830f6458c713c6391420b');
+Kakao.isInitialized();
+
 const url = "https://toyprojecthz.github.io/simple-test/"
 
 function setShare() {
@@ -5,9 +8,8 @@ function setShare() {
     var resultAlt = resultImg.firstElementChild.alt;
     const shareTitle = "테스트결과"
     const shareDes = infoList[resultAlt].title;
-    const shareImage = '"' + url + "img/image-" + resultAlt + ".jpg" + '"';
-    const shareURL = '"' + url + 'result/result-' + resultAlt + '.html' + '"';
-
+    const shareImage = '"' + "https://toyprojecthz.github.io/simple-test/" + "img/image-" + resultAlt + ".jpg" + '"';
+    const shareURL = '"' + "https://toyprojecthz.github.io/simple-test/" + 'result/result-' + resultAlt + '.html' + '"';
     Kakao.Link.sendDefault({
         objectType: 'feed',
         content: {
