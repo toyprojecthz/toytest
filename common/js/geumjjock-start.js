@@ -37,8 +37,6 @@ function keyTypes() {
     }
 
     pwr("");
-
-    console.log(result);
 }
 
 function calResult() {
@@ -49,7 +47,6 @@ function calResult() {
         newArr.push(comparedArr);
     }
     result.push(newArr.join(""));
-    console.log(result);
     return result
 }
 
@@ -60,6 +57,8 @@ function setResult() {
     var infoResult = infoList.find(({
         key
     }) => key === calResult()[0]);
+
+    console.log(infoResult)
 
     var resultImg = document.createElement("img");
     const imgDiv = document.querySelector("#resultImg");
@@ -131,9 +130,6 @@ function goNext(qIdx, idx, statusIdx) {
     var totalNumb = document.querySelectorAll(".status-wrap .numb span")[1];
     statusNumb.innerHTML = statusIdx
     totalNumb.innerHTML = totalPoint
-    console.log(statusIdx)
-
-
 }
 
 function begin() {
