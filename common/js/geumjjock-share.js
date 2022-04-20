@@ -5,6 +5,7 @@ function setShare() {
     var resultAlt = resultImg.firstElementChild.alt;
     console.log(resultAlt)
     console.log('"' + url + "img/image-" + resultAlt + ".jpg" + '"')
+    console.log('"' + url + 'result/result-' + resultAlt + '.html' + '"')
     const shareTitle = "금쪽이 테스트!"
     const shareDes = infoList[resultAlt].title;
     const shareImage = '"' + url + "img/image-" + resultAlt + ".jpg" + '"';
