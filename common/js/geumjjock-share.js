@@ -4,7 +4,7 @@ function setShare() {
     var resultImg = document.querySelector("#resultImg");
     var resultAlt = resultImg.firstElementChild.alt;
     const shareTitle = "테스트결과"
-    const shareDes = infoList[resultAlt].name;
+    const shareDes = infoList[resultAlt].title;
     const shareImage = '"' + url + "img/image-" + resultAlt + ".jpg" + '"';
     const shareURL = '"' + url + 'result/result-' + resultAlt + '.html' + '"';
 

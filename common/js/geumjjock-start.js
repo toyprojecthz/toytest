@@ -58,13 +58,14 @@ function setResult() {
         key
     }) => key === calResult()[0]);
 
+    console.log(calResult)
     console.log(infoResult)
 
     var resultImg = document.createElement("img");
     const imgDiv = document.querySelector("#resultImg");
     var imgURL = "img/image-" + infoResult.imgUrl + ".jpg";
     resultImg.src = imgURL;
-    resultImg.alt = infoResult;
+    resultImg.alt = infoResult.imgUrl;
     resultImg.classList.add("img-fluid");
     imgDiv.appendChild(resultImg);
 
