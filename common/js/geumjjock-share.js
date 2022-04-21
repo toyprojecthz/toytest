@@ -13,8 +13,10 @@ function setShare() {
         // objectType: 'feed',
         templateId: 75003,
         templateArgs: {
-            'title': shareTitle,
-            'description': shareDes
+            'shareTitle': shareTitle,
+            'shareDes': shareDes,
+            'shareImage': shareImage,
+            'shareURL': shareURL,
         }
 
         // content: {
