@@ -7,6 +7,7 @@
 	height: auto;
 	margin: 0 auto;
 	padding: 60px 30px;
+	visibility: hidden;
 }
 
 .wrap.pink {

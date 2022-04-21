@@ -2,6 +2,8 @@ $(document).ready(function () {
     setTimeout(() => {
         $("#loader").fadeOut();
     }, 300);
+    $(".wrap").css("visibility", "visible")
+
 });
 
 const main = document.querySelector("#intro");
