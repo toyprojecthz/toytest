@@ -1,10 +1,12 @@
 .wrap {
 	height: auto;
+	min-height: 100%;
 	border: 10px solid #64D5D9;
 	background-color: #F3FFFF;
 	width: 800px;
 	max-width: 100%;
 	visibility: hidden;
+	margin: 0 auto;
 }
 .wrap.pink {
 	border: 10px solid #ff86c7;
