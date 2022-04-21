@@ -1,10 +1,10 @@
 $(document).ready(function () {
     setTimeout(() => {
         $(".wrap").css("visibility", "visible")
-    }, 100);
+    }, 300);
     setTimeout(() => {
         $("#loader").fadeOut();
-    }, 300);
+    }, 500);
 });
 
 const main = document.querySelector("#intro");
