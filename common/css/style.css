@@ -51,7 +51,8 @@
 	margin-bottom: 40px;
 }
 
-.intro-wrap .visual iframe {
+.intro-wrap .visual iframe,
+.result-wrap iframe {
 	pointer-events: none;
 }
 
