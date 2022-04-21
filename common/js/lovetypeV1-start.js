@@ -1,5 +1,7 @@
 $(document).ready(function () {
-    $("#loader").fadeOut();
+    setTimeout(() => {
+        $("#loader").fadeOut();
+    }, 300);
 });
 
 const main = document.querySelector("#intro");
