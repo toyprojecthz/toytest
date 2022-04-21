@@ -2,13 +2,11 @@ function setShare() {
     const url = 'https://toyprojecthz.github.io/toytest/friendPersona/'
     var resultImg = document.querySelector("#resultImg");
     var resultAlt = resultImg.firstElementChild.alt;
-    console.log(resultAlt)
-    console.log('"' + url + "img/image-" + resultAlt + ".jpg" + '"')
-    console.log('"' + url + 'result/result-' + resultAlt + '.html' + '"')
+
     const shareTitle = "금쪽이 테스트!"
     const shareDes = infoList[resultAlt].title;
-    const shareImage = '"' + url + 'img/image-' + resultAlt + '.jpg' + '"';
-    const shareURL = '"' + url + 'result/result-' + resultAlt + '.html' + '"';
+    const shareImage = url + 'img/image-' + resultAlt + '.jpg';
+    const shareURL = url + 'result/result-' + resultAlt + '.html';
 
 
     Kakao.Link.sendDefault({
@@ -18,8 +16,8 @@ function setShare() {
             description: shareDes,
             imageUrl: shareImage,
             link: {
-                webUrl: '"' + url + '"',
-                mobileWebUrl: '"' + url + '"',
+                webUrl: url,
+                mobileWebUrl: url,
             },
         },
 
