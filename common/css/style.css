@@ -48,7 +48,7 @@
 .intro-wrap .visual iframe,
 .result-wrap iframe {
 	pointer-events: none;
-	max-width: fit-content100%;
+	max-width: 100%;
 }
 
 .intro-wrap .visual img {
