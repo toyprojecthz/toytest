@@ -1,5 +1,6 @@
 function setShare() {
-    const url = "https://toyprojecthz.github.io/toytest/friendPersona/"
+    // const url = "https://toyprojecthz.github.io/toytest/friendPersona/"
+    const url = "https://www.naver.com/"
     var resultImg = document.querySelector("#resultImg");
     var resultAlt = resultImg.firstElementChild.alt;
     console.log(resultAlt)
@@ -8,7 +9,8 @@ function setShare() {
     const shareTitle = "금쪽이 테스트!"
     const shareDes = infoList[resultAlt].title;
     const shareImage = '"' + url + "img/image-" + resultAlt + ".jpg" + '"';
-    const shareURL = '"' + url + 'result/result-' + resultAlt + '.html' + '"';
+    // const shareURL = '"' + url + 'result/result-' + resultAlt + '.html' + '"';
+    // const shareURL = url;
 
 
     Kakao.Link.sendDefault({
@@ -26,8 +28,8 @@ function setShare() {
         buttons: [{
             title: '결과 확인하기',
             link: {
-                webUrl: shareURL,
-                mobileWebUrl: shareURL,
+                webUrl: url,
+                mobileWebUrl: url,
             },
         }]
     });
