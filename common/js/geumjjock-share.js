@@ -9,7 +9,7 @@ function setShare() {
     const shareURL = url + 'result/result-' + resultAlt + '.html';
 
 
-    Kakao.Link.sendDefault({
+    Kakao.Link.sendCustom({
         // objectType: 'feed',
         templateId: 75003,
 
