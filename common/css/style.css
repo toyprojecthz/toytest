@@ -8,10 +8,12 @@
 	visibility: hidden;
 	margin: 0 auto;
 }
+
 .wrap.pink {
 	border: 10px solid #ff86c7;
 	background-color: #ffe5f2;
 }
+
 .inner {
 	height: 100%;
 	margin: 0 auto;
@@ -48,9 +50,11 @@
 	max-width: 100%;
 	margin-bottom: 40px;
 }
-.intro-wrap .visual iframe{
+
+.intro-wrap .visual iframe {
 	pointer-events: none;
 }
+
 .intro-wrap .visual img {
 	display: block;
 	margin: 0 auto;
@@ -187,6 +191,7 @@
 
 .result-wrap {
 	line-height: 1.5;
+	text-align: center;
 }
 
 .result-wrap .img {
@@ -218,7 +223,7 @@
 
 .share-wrap {
 	margin-top: 100px;
-
+	text-align: center;
 }
 
 .share-wrap h3 {
