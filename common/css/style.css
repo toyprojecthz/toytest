@@ -8,7 +8,7 @@
 	padding: 60px 30px;
 }
 
-.pink .wrap {
+.wrap.pink  {
 	border: 10px solid #ff86c7;
 	background-color: #ffe5f2;
 }
