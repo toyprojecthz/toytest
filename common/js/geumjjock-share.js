@@ -1,4 +1,4 @@
-Kakao.init(APP_API_KAKAOSHARE_KEY);
+Kakao.init("3fcf47defed830f6458c713c6391420b");
 Kakao.isInitialized();
 function setShare() {
     const url = 'https://toyprojecthz.github.io/toytest/geumjjock/'
