@@ -7,6 +7,7 @@ function setShare() {
     const shareDes = infoList[resultAlt].title;
     const shareImage = url + 'img/image-' + resultAlt + '.jpg';
     const shareURL = url + 'result/result-' + resultAlt + '.html';
+    const sharePATH = '/toytest/friendPersona/result/result-' + resultAlt + '.html';
 
 
     Kakao.Link.sendCustom({
@@ -17,6 +18,7 @@ function setShare() {
             'shareDes': shareDes,
             'shareImage': shareImage,
             'shareURL': shareURL,
+            'sharePATH': sharePATH
         }
 
         // content: {
