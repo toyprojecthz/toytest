@@ -1,4 +1,5 @@
 window.addEventListener('load', function () {
+    $(".wrap").css("visibility", "hidden")
     setTimeout(() => {
         $(".wrap").css("visibility", "visible")
     }, 300);
