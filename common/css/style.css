@@ -46,7 +46,9 @@
 	max-width: 100%;
 	margin-bottom: 40px;
 }
-
+.intro-wrap .visual iframe{
+	pointer-events: none;
+}
 .intro-wrap .visual img {
 	display: block;
 	margin: 0 auto;
