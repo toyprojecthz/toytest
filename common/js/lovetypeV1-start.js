@@ -53,7 +53,7 @@ function calResult() {
 
 
 
-function setResult() {
+function setResult(statusIdx) {
     var infoResult = infoList.find(({
         key
     }) => key === calResult()[0]);
@@ -61,24 +61,27 @@ function setResult() {
     console.log(calResult)
     console.log(infoResult)
 
-    var resultImg = document.createElement("img");
     const imgDiv = document.querySelector("#resultImg");
-    var imgURL = "img/image-" + infoResult.imgUrl + ".jpg";
+    const resultImg = document.querySelector("#resultImg iframe");
+
+    var imgURL = infoResult.imgUrl;
     resultImg.src = imgURL;
-    resultImg.alt = infoResult.imgUrl;
+    resultImg.alt = statusIdx;
     resultImg.classList.add("img-fluid");
-    imgDiv.appendChild(resultImg);
 
     const resultTitle = document.querySelector(".resultTitle");
     resultTitle.innerHTML = infoResult.title;
-    const resultDesc = document.querySelector(".resultDesc");
-    resultDesc.innerHTML = infoResult.desc;
+    const resultDesc = document.querySelector(".resultDesc ul");
+    const resultDesc1 = resultDesc.firstChild;
+    const resultDesc2 = resultDesc.lastChild;
+    resultDesc1.innerHTML = infoResult.desc1;
+    resultDesc2.innerHTML = infoResult.desc2;
 }
 
 function goResult() {
     qna.style.display = "none";
     result.style.display = "block";
-    setResult()
+    setResult(statusIdx)
 }
 
 function addAnswer(answerText, qIdx, idx, aIdx, statusIdx) {
