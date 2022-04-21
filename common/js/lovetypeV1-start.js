@@ -71,9 +71,8 @@ function setResult(statusIdx) {
 
     const resultTitle = document.querySelector(".resultTitle");
     resultTitle.innerHTML = infoResult.title;
-    const resultDesc = document.querySelector(".resultDesc ul");
-    const resultDesc1 = resultDesc.firstChild;
-    const resultDesc2 = resultDesc.lastChild;
+    const resultDesc1 = document.querySelector(".resultDesc ul li:nth-child(1)");
+    const resultDesc2 = document.querySelector(".resultDesc ul li:nth-child(2)");
     resultDesc1.innerHTML = infoResult.desc1;
     resultDesc2.innerHTML = infoResult.desc2;
     console.log(infoResult.desc1)
