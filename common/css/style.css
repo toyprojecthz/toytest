@@ -15,7 +15,7 @@
 }
 
 .inner {
-	height: 100%;
+	min-height: 100vh;
 	margin: 0 auto;
 	padding: 60px 30px;
 }
@@ -219,6 +219,10 @@
 .result-wrap .resultDesc {
 	font-size: 18px;
 	margin-top: 20px;
+}
+
+.result-wrap .resultDesc li:not(:first-child) {
+	margin-top: 40px;
 }
 
 .share-wrap {
