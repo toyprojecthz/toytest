@@ -1,7 +1,8 @@
+const wrap = document.querySelector(".wrap");
+wrap.style.visibility = "hidden"
 window.addEventListener('load', function () {
-    $(".wrap").css("visibility", "hidden")
     setTimeout(() => {
-        $(".wrap").css("visibility", "visible")
+        wrap.style.visibility = "visible"
     }, 300);
     setTimeout(() => {
         $("#loader").fadeOut();
