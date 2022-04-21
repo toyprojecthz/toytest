@@ -1,3 +1,7 @@
+$(document).ready(function () {
+    $("#loader").fadeOut();
+});
+
 const main = document.querySelector("#intro");
 const qna = document.querySelector("#qna");
 const result = document.querySelector("#result");
