@@ -76,6 +76,8 @@ function setResult(statusIdx) {
     const resultDesc2 = resultDesc.lastChild;
     resultDesc1.innerHTML = infoResult.desc1;
     resultDesc2.innerHTML = infoResult.desc2;
+    console.log(infoResult.desc1)
+    console.log(infoResult.desc2)
 }
 
 function goResult(statusIdx) {
