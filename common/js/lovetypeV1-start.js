@@ -67,12 +67,11 @@ function setResult(statusIdx) {
     console.log(calResult)
     console.log(infoResult)
 
-    const imgDiv = document.querySelector("#resultImg");
     const resultImg = document.querySelector("#resultImg iframe");
 
     var imgURL = infoResult.imgUrl;
     resultImg.src = imgURL;
-    resultImg.alt = statusIdx;
+    resultImg.id = statusIdx;
     resultImg.classList.add("img-fluid");
 
     const resultTitle = document.querySelector(".resultTitle");

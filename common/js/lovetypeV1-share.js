@@ -3,11 +3,11 @@ Kakao.isInitialized();
 function setShare() {
     const url = 'https://toyprojecthz.github.io/toytest/geumjjock/'
     var resultImg = document.querySelector("#resultImg");
-    var resultAlt = resultImg.firstElementChild.alt;
+    var resultAlt = resultImg.firstElementChild.id;
 
     const shareTitle = '금쪽이 테스트!'
     const shareDes = infoList[resultAlt].title;
-    const shareImage = url + 'img/image-' + resultAlt + '.jpg';
+    const shareImage = 'https://toyprojecthz.github.io/toytest/images/sns-img.jpg';
     const shareURL = url + 'result/result-' + resultAlt + '.html';
     const sharePATH = '/toytest/geumjjock/result/result-' + resultAlt + '.html';
 

@@ -3,7 +3,8 @@
 	max-width: 100%;
 	border: 10px solid #64D5D9;
 	background-color: #F3FFFF;
-	height: 100%;
+	min-height: 100%;
+	height: auto;
 	margin: 0 auto;
 	padding: 60px 30px;
 }
@@ -173,7 +174,7 @@
 }
 
 .pink .aBox button {
-	background-color: #e7017a;
+	background-color: #e7007a;
 }
 
 .result-wrap {
