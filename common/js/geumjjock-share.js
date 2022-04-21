@@ -10,26 +10,26 @@ function setShare() {
 
 
     Kakao.Link.sendDefault({
-        objectType: 'feed',
-        // templateId: 75003,
+        // objectType: 'feed',
+        templateId: 75003,
 
-        content: {
-            title: shareTitle,
-            description: shareDes,
-            imageUrl: shareImage,
-            link: {
-                webUrl: url,
-                mobileWebUrl: url,
-            },
-        },
+        // content: {
+        //     title: shareTitle,
+        //     description: shareDes,
+        //     imageUrl: shareImage,
+        //     link: {
+        //         webUrl: url,
+        //         mobileWebUrl: url,
+        //     },
+        // },
 
-        buttons: [{
-            title: '결과 확인하기',
-            link: {
-                webUrl: shareURL,
-                mobileWebUrl: shareURL,
-            },
-        }]
+        // buttons: [{
+        //     title: '결과 확인하기',
+        //     link: {
+        //         webUrl: shareURL,
+        //         mobileWebUrl: shareURL,
+        //     },
+        // }]
     });
 
 
