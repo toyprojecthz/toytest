@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <div data-include-path="../inc/head.html"></div>
+    <script>
+        window.addEventListener('load', function () {
+            var allElements = document.getElementsByTagName('*');
+            Array.prototype.forEach.call(allElements, function (el) {
+                var includePath = el.dataset.includePath;
+                if (includePath) {
+                    var xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function () {
+                        if (this.readyState == 4 && this.status == 200) {
+                            el.outerHTML = this.responseText;
+                        }
+                    };
+                    xhttp.open('GET', includePath, true);
+                    xhttp.send();
+                }
+            });
+        });
+    </script>
+    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+    <title>연예유형 테스트 Ver. 1.0</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <section id="intro" class="outter intro-wrap">
+            <article class="cnt-inner">
+                <div class="visual">
+                    <img src="./img/mybaby-ico.png" alt="우리금쪽이"> </div>
+                <h2><b>연예유형 & 궁합</b> 테스트 <span>Ver. 1.0</span></h2>
+                <p>내 성향과 연애 방식을 기반으로한<br><b>나의 연애유형과 잘 맞는 궁합</b>을 알아보자!</p>
+                <span>(소요시간 : 5분)</span>
+                <a href="javascript:begin()" class="common-btn aqua"><b>테스트 시작!</b></a>
+            </article>
+        </section>
+        <section id="qna" class="outter qna-wrap">
+            <div class="status-wrap">
+                <ul class="top">
+                    <li>이만큼 남았어요 화이띵!</li>
+                    <li class="numb"><span>1</span>/<span></span></li>
+                </ul>
+                <div class="statusBar aqua"><span></span></div>
+            </div>
+            <article class="cnt-inner">
+                <div class="qBox"></div>
+                <div class="aBox aqua"></div>
+            </article>
+        </section>
+        <section id="result" class="outter result-wrap">
+            <article class="cnt-inner">
+                <div id="resultImg" class="img"></div>
+                <div class="resultTitle"></div>
+                <div class="resultDesc"></div>
+                <div class="share-wrap">
+                    <h3>결과가 소름돋게 나와 잘 맞나요?<br>그럼 <b>친구들에게 공유</b>해보세요! &#128523;</h3>
+                    <button type="button" onclick="js:setShare()" class="share-btn"><b class="ico"><i
+                                class="xi-kakaotalk"></i></b><span>카카오톡으로
+                            공유하기</span></button>
+                </div>
+            </article>
+        </section>
+    </div>
+    <script src="../common/js/lovetypeV1-data.js"></script>
+    <script src="../common/js/lovetypeV1-start.js"></script>
+    <script src="../common/js/lovetypeV1-share.js"></script>
+
+</body>
+
+</html>
