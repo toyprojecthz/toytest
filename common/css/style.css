@@ -47,11 +47,18 @@
 	margin-bottom: 40px;
 }
 
+.intro-wrap .visual,
+.result-wrap .img {
+	height: 200px;
+	width: 100%;
+}
+
 .intro-wrap .visual iframe,
-.result-wrap iframe {
+.result-wrap .img iframe {
 	pointer-events: none;
-	max-width: 100%;
-	height: auto;
+	height: 100%;
+	display: block;
+	margin: 0 auto;
 }
 
 .intro-wrap .visual img {
