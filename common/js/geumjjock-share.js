@@ -10,8 +10,8 @@ function setShare() {
 
 
     Kakao.Link.sendDefault({
-        // objectType: 'feed',
-        templateId :  75003,
+        objectType: 'feed',
+        templateId: 75003,
 
         content: {
             title: shareTitle,
