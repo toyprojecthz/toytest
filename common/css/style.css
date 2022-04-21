@@ -7,7 +7,7 @@
 	max-width: 100%;
 	visibility: hidden;
 	margin: 0 auto;
-	padding: 60px 30px;
+	padding: 60px 20px;
 }
 
 .wrap.pink {
@@ -39,6 +39,7 @@
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	height: auto;
 }
 
 .intro-wrap .visual {
@@ -50,6 +51,7 @@
 .result-wrap iframe {
 	pointer-events: none;
 	max-width: 100%;
+	height: auto;
 }
 
 .intro-wrap .visual img {
@@ -60,8 +62,9 @@
 
 .intro-wrap h2 {
 	font-weight: normal;
-	font-size: 35px;
+	font-size: 26px;
 	text-align: center;
+	line-height: 1.2;
 }
 
 .intro-wrap h2 b {
@@ -70,7 +73,7 @@
 
 .intro-wrap p {
 	margin-top: 30px;
-	font-size: 20px;
+	font-size: 17px;
 	font-weight: 300;
 	text-align: center;
 	line-height: 1.4;
@@ -104,7 +107,7 @@
 	padding: 12px;
 	border-radius: 300px;
 	color: #fff !important;
-	font-size: 18px;
+	font-size: 15px;
 	margin: 50px auto 0;
 }
 
