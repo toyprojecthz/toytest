@@ -3,8 +3,7 @@
 	max-width: 100%;
 	border: 10px solid #64D5D9;
 	background-color: #F3FFFF;
-	min-height: 100%;
-	height: auto;
+	height: 100%;
 	margin: 0 auto;
 	padding: 60px 30px;
 	visibility: hidden;

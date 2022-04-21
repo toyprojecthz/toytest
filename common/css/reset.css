@@ -63,9 +63,7 @@ body {
     overscroll-behavior-x: none;
 }
 
-.wrap {
-    overflow: hidden
-}
+
 
 .relative {
     position: relative
