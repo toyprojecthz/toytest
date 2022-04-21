@@ -1,9 +1,10 @@
 $(document).ready(function () {
     setTimeout(() => {
+        $(".wrap").css("visibility", "visible")
+    }, 100);
+    setTimeout(() => {
         $("#loader").fadeOut();
     }, 300);
-    $(".wrap").css("visibility", "visible")
-
 });
 
 const main = document.querySelector("#intro");
