@@ -1,7 +1,7 @@
 Kakao.init('3fcf47defed830f6458c713c6391420b');
 Kakao.isInitialized();
 function setShare() {
-    const url = 'https://toyprojecthz.github.io/toytest/geumjjok/'
+    const url = 'https://toyprojecthz.github.io/toytest/geumjjock/'
     var resultImg = document.querySelector("#resultImg");
     var resultAlt = resultImg.firstElementChild.alt;
 
@@ -9,7 +9,7 @@ function setShare() {
     const shareDes = infoList[resultAlt].title;
     const shareImage = url + 'img/image-' + resultAlt + '.jpg';
     const shareURL = url + 'result/result-' + resultAlt + '.html';
-    const sharePATH = '/toytest/geumjjok/result/result-' + resultAlt + '.html';
+    const sharePATH = '/toytest/geumjjock/result/result-' + resultAlt + '.html';
 
 
     Kakao.Link.sendCustom({
