@@ -78,7 +78,7 @@ function setResult(statusIdx) {
     resultDesc2.innerHTML = infoResult.desc2;
 }
 
-function goResult() {
+function goResult(statusIdx) {
     qna.style.display = "none";
     result.style.display = "block";
     setResult(statusIdx)
@@ -116,7 +116,7 @@ function addQuestion(questionText) {
 
 function goNext(qIdx, idx, statusIdx) {
     if (qIdx === endPoint) {
-        goResult();
+        goResult(statusIdx);
         return
     }
 
