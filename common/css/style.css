@@ -8,7 +8,7 @@
 	padding: 60px 30px;
 }
 
-.wrap.pink  {
+.wrap.pink {
 	border: 10px solid #ff86c7;
 	background-color: #ffe5f2;
 }
@@ -138,6 +138,14 @@
 	transition: .3s;
 }
 
+.pink .statusBar {
+	background-color: #fff;
+}
+
+.pink .statusBar span {
+	background-color: #e7007a;
+}
+
 .qBox {
 	font-size: 24px;
 	line-height: 1.5;
@@ -162,6 +170,10 @@
 
 .aBox.aqua button {
 	background-color: #198589
+}
+
+.pink .aBox button {
+	background-color: #e7017a;
 }
 
 .result-wrap {
