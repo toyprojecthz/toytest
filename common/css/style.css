@@ -8,6 +8,7 @@
 	visibility: hidden;
 	margin: 0 auto;
 	padding: 60px 20px;
+	position: relative
 }
 
 .wrap.pink {
@@ -15,10 +16,6 @@
 	background-color: #ffe5f2;
 }
 
-.inner {
-	width: 100%;
-	position: relative;
-}
 
 
 
