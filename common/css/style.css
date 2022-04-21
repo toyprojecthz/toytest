@@ -134,7 +134,7 @@
 	position: relative;
 }
 
-.statusBar.aqua span {
+.statusBar span {
 	background-color: #64D5D9;
 	height: 100%;
 	position: absolute;
