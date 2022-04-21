@@ -3,7 +3,7 @@ function setShare() {
     var resultImg = document.querySelector("#resultImg");
     var resultAlt = resultImg.firstElementChild.alt;
 
-    const shareTitle = "금쪽이 테스트!"
+    const shareTitle = '금쪽이 테스트!'
     const shareDes = infoList[resultAlt].title;
     const shareImage = url + 'img/image-' + resultAlt + '.jpg';
     const shareURL = url + 'result/result-' + resultAlt + '.html';
@@ -12,6 +12,10 @@ function setShare() {
     Kakao.Link.sendCustom({
         // objectType: 'feed',
         templateId: 75003,
+        templateArgs: {
+            'title': shareTitle,
+            'description': shareDes
+        }
 
         // content: {
         //     title: shareTitle,
