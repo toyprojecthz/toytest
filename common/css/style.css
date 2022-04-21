@@ -29,6 +29,7 @@
 	-webkit-box-pack: center;
 	-ms-flex-pack: center;
 	justify-content: center;
+	height: 100%;
 }
 
 .intro-wrap .visual {
@@ -133,7 +134,7 @@
 	line-height: 1.5;
 	max-width: 80%;
 	margin: 0 auto 100px;
-
+	text-align: center;
 }
 
 .aBox button:not(:first-child) {
