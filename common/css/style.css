@@ -1,18 +1,22 @@
 .wrap {
-	width: 800px;
-	max-width: 100%;
+	height: auto;
 	border: 10px solid #64D5D9;
 	background-color: #F3FFFF;
+	width: 800px;
+	max-width: 100%;
+}
+.wrap.pink {
+	border: 10px solid #ff86c7;
+	background-color: #ffe5f2;
+}
+.inner {
 	height: 100%;
 	margin: 0 auto;
 	padding: 60px 30px;
 	visibility: hidden;
 }
 
-.wrap.pink {
-	border: 10px solid #ff86c7;
-	background-color: #ffe5f2;
-}
+
 
 #qna,
 #result {
