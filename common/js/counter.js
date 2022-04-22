@@ -1,20 +1,14 @@
-var counterContainer = document.querySelector(".website-counter");
-// var resetButton = document.querySelector("#reset");
-var visitCount = localStorage.getItem("page_view");
+var n = localStorage.getItem('on_load_counter');
 
-// Check if page_view entry is present
-if (visitCount) {
-    visitCount = Number(visitCount) + 1;
-    localStorage.setItem("page_view", visitCount);
-} else {
-    visitCount = 1;
-    localStorage.setItem("page_view", 1);
+if (n === null) {
+  n = 0;
 }
-counterContainer.innerHTML = visitCount;
+n++;
 
-// Adding onClick event listener
-// resetButton.addEventListener("click", () => {
-//     visitCount = 1;
-//     localStorage.setItem("page_view", 1);
-//     counterContainer.innerHTML = visitCount;
-// });
+localStorage.setItem("on_load_counter", n);
+
+nums = n.toString().split('').map(Number);
+document.getElementById('CounterVisitor').innerHTML = '';
+for (var i of nums) {
+  document.getElementById('CounterVisitor').innerHTML += i;
+}
