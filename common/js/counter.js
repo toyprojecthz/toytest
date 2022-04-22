@@ -1,3 +1,4 @@
+var defaultNumb = 2982
 var n = localStorage.getItem('on_load_counter');
 
 if (n === null) {
@@ -13,6 +14,5 @@ nums = n.toString().split('').map(Number);
 var countContainer = document.getElementById("CounterVisitor");
 countContainer.innerHTML = '';
 for (var i of nums) {
-    countContainer.innerHTML += i;
-    console.log(n)
+    countContainer.innerHTML = defaultNumb + i;
 }
