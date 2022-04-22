@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <div data-include-path="../inc/head.html"></div>
+    <script>
+        window.addEventListener('load', function () {
+            var allElements = document.getElementsByTagName('*');
+            Array.prototype.forEach.call(allElements, function (el) {
+                var includePath = el.dataset.includePath;
+                if (includePath) {
+                    var xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function () {
+                        if (this.readyState == 4 && this.status == 200) {
+                            el.outerHTML = this.responseText;
+                        }
+                    };
+                    xhttp.open('GET', includePath, true);
+                    xhttp.send();
+                }
+            });
+        });
+    </script>
+    <title>연예유형 테스트 Ver. 1.0 결과는?!</title>
+</head>
+
+<body>
+    <section id="result" class="result-wrap">
+        <article class="cnt-inner">
+            <div id="resultImg" class="img"><img src="../img/image-5.jpg" alt=""></div>
+            <div class="resultTitle">
+                <h3>나의 궁합 코드 : 0011</h3>
+                <br>
+                <p>나랑 잘 맞는 코드 : 1010, 1000 / 안 맞는 코드 : 1101</p>
+            </div>
+            <div class="resultDesc">
+                <ul>
+                    <li>
+                        즉흥적이고 사교적이기 때문에 쉽게 사랑에 빠지고 금방 콩깍지가 벗겨지는 편 입니다. 데이트를 자주 하는 걸 좋아하며 친구 같은 연애를 선호합니다. 하지만 바람기가 있어 장기연애에는 취약하며 상대와의 만남이 익숙해질 때쯤 다른 사람으로 갈아타는 성향이 있습니다.
+                    </li>
+                    <li>
+                        내향적인 성격과 좋은 궁합이며 어디로 튈지 모르는 탱탱볼 같은 당신의 돌발행동을 잘 받아주고 이해해주는 유형과 궁합이 잘 맞습니다.
+                    </li>
+                </ul>
+            </div>
+            <div class="share-wrap">
+                <a href="../">테스트 하러 가기!</a>
+            </div>
+        </article>
+    </section>
+</body>
+
+</html>

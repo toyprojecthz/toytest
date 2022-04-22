@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <div data-include-path="../inc/head.html"></div>
+    <script>
+        window.addEventListener('load', function () {
+            var allElements = document.getElementsByTagName('*');
+            Array.prototype.forEach.call(allElements, function (el) {
+                var includePath = el.dataset.includePath;
+                if (includePath) {
+                    var xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function () {
+                        if (this.readyState == 4 && this.status == 200) {
+                            el.outerHTML = this.responseText;
+                        }
+                    };
+                    xhttp.open('GET', includePath, true);
+                    xhttp.send();
+                }
+            });
+        });
+    </script>
+    <title>연예유형 테스트 Ver. 1.0 결과는?!</title>
+</head>
+
+<body>
+    <section id="result" class="result-wrap">
+        <article class="cnt-inner">
+            <div id="resultImg" class="img"><iframe src="https://giphy.com/embed/lvHir7Z9eCCbqm98IY" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
+            <div class="resultTitle">
+                <h3>나의 궁합 코드 : 1111</h3>
+                <br>
+                <p>나랑 잘 맞는 코드 : 0110, 0100 / 안 맞는 코드 : 0001</p>
+            </div>
+            <div class="resultDesc">
+                <ul>
+                    <li>
+                        상상력이 풍부한 스타일로써 연애를 시작하기 전 걱정부터 하는 편입니다. 내가 상대방을 좋아하는 만큼 나도 똑같이 좋아해 주길 바라며 애교는 정말 없는 편입니다. 눈에
+                        콩깍지가 씌면 상대의 단점을 쉽게 넘기는 편이고 사랑을 할 때는 논리보다는 감성이 우선적이지만 그 관계가 끝나면 미련을 갖기보다는 완벽하게 인연을 단호하게 끊어내는
+                        편입니다.
+                    </li>
+                    <li>
+                        감정이 풍부하고 배려심이 깊은 로맨티시스트인 당신은 정서적 교감을 추구하기 때문에 이상적이면서 낭만적인 사람에게 끌립니다. 현실주의적인 사람들과는 불편한 관계가 될 수도
+                        있으므로 이상적이면서 언변에 능숙해 당신에게 상처를 잘 주지 않을 상대와 궁합이 잘 맞습니다.
+                    </li>
+                </ul>
+            </div>
+            <div class="share-wrap">
+                <a href="../">테스트 하러 가기!</a>
+            </div>
+        </article>
+    </section>
+</body>
+
+</html>

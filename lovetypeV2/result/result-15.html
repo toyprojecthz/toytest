@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <div data-include-path="../inc/head.html"></div>
+    <script>
+        window.addEventListener('load', function () {
+            var allElements = document.getElementsByTagName('*');
+            Array.prototype.forEach.call(allElements, function (el) {
+                var includePath = el.dataset.includePath;
+                if (includePath) {
+                    var xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function () {
+                        if (this.readyState == 4 && this.status == 200) {
+                            el.outerHTML = this.responseText;
+                        }
+                    };
+                    xhttp.open('GET', includePath, true);
+                    xhttp.send();
+                }
+            });
+        });
+    </script>
+    <title>연예유형 테스트 Ver. 1.0 결과는?!</title>
+</head>
+
+<body>
+    <section id="result" class="result-wrap">
+        <article class="cnt-inner">
+            <div id="resultImg" class="img"><img src="../img/image-15.jpg" alt=""></div>
+            <div class="resultTitle">
+                <h3>나의 궁합 코드 : 0100</h3>
+                <br>
+                <p>나랑 잘 맞는 코드 : 1111, 1101 / 안 맞는 코드 : 1010</p>
+            </div>
+            <div class="resultDesc">
+                <ul>
+                    <li>
+                        의외로 연애할 때는 다정한 모습을 보여주는 당신은 승리욕이 강하고 카톡도 안읽씹 읽씹이 습관이지만 연애할 때 만큼은 가끔 상대에게 져주기도 합니다. 하지만 용건 없이 길게
+                        전화기를 붙들고 통화하는 걸 싫어하며 연인 사이에서도 연락은 용건만 간단히 하자는 주의라서 상대와 연락문제로 다툴 가능성이 높아보입니다.
+                    </li>
+                    <li>
+                        안정감 있는 연애를 추구하고 내가 말하지 않아도 내 불만과 속마음을 알아줬으면 하는 스타일이기 때문에 조심스러운 성격이면서도 언변에 능숙한 사람과 찰떡궁합입니다.
+                    </li>
+                </ul>
+            </div>
+            <div class="share-wrap">
+                <a href="../">테스트 하러 가기!</a>
+            </div>
+        </article>
+    </section>
+</body>
+
+</html>

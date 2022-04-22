@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <div data-include-path="../inc/head.html"></div>
+    <script>
+        window.addEventListener('load', function () {
+            var allElements = document.getElementsByTagName('*');
+            Array.prototype.forEach.call(allElements, function (el) {
+                var includePath = el.dataset.includePath;
+                if (includePath) {
+                    var xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function () {
+                        if (this.readyState == 4 && this.status == 200) {
+                            el.outerHTML = this.responseText;
+                        }
+                    };
+                    xhttp.open('GET', includePath, true);
+                    xhttp.send();
+                }
+            });
+        });
+    </script>
+    <title>연예유형 테스트 Ver. 1.0 결과는?!</title>
+</head>
+
+<body>
+    <section id="result" class="result-wrap">
+        <article class="cnt-inner">
+            <div id="resultImg" class="img"><img src="../img/image-11.jpg" alt=""></div>
+            <div class="resultTitle">
+                <h3>나의 궁합 코드 : 1000</h3>
+                <br>
+                <p>나랑 잘 맞는 코드 : 0011, 0001 / 안 맞는 코드 : 0110</p>
+            </div>
+            <div class="resultDesc">
+                <ul>
+                    <li>
+                        자존심이 강해서 좋아하는 상대가 있어도 관심 없는 척을 합니다. 그래서 고백도 먼저 하지 않으며 정말 큰 호감이 있는 경우에만 아주 조금씩 표현 하는 편입니다. 과묵하고
+                        책임감 있는 사람을 좋아하고 충동적인 사람은 싫어합니다. 또한 갈등이 생겼을 때는 무조건 이기려고 하는 경향이 있습니다.
+                    </li>
+                    <li>
+                        질질 끌고 집착하는 것을 싫어하기 때문에 논리적이고 똑 부러지는 사람을 좋아합니다. 활동적인 활동보단 정적인 데이트를 즐기는 사람을 선호하며 약속시각을 잘 지키지 않는
+                        사람에게는 쉽게 호감이 떨어집니다. 또한, 감성적인 대화보다는 지적 정보를 교류할 수 있는 사람과 궁합이 잘 맞습니다. </li>
+                </ul>
+            </div>
+            <div class="share-wrap">
+                <a href="../">테스트 하러 가기!</a>
+            </div>
+        </article>
+    </section>
+</body>
+
+</html>

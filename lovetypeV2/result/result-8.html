@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <div data-include-path="../inc/head.html"></div>
+    <script>
+        window.addEventListener('load', function () {
+            var allElements = document.getElementsByTagName('*');
+            Array.prototype.forEach.call(allElements, function (el) {
+                var includePath = el.dataset.includePath;
+                if (includePath) {
+                    var xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function () {
+                        if (this.readyState == 4 && this.status == 200) {
+                            el.outerHTML = this.responseText;
+                        }
+                    };
+                    xhttp.open('GET', includePath, true);
+                    xhttp.send();
+                }
+            });
+        });
+    </script>
+    <title>연예유형 테스트 Ver. 1.0 결과는?!</title>
+</head>
+
+<body>
+    <section id="result" class="result-wrap">
+        <article class="cnt-inner">
+            <div id="resultImg" class="img"><img src="../img/image-8.jpg" alt=""></div>
+            <div class="resultTitle">
+                <h3>나의 궁합 코드 : 0110</h3>
+                <br>
+                <p>나랑 잘 맞는 코드 : 1111, 1011 / 안 맞는 코드 : 1000</p>
+            </div>
+            <div class="resultDesc">
+                <ul>
+                    <li>
+                        당신에게 사랑이란 꽃과 밤하늘같이 낭만적인 것입니다. 한번 사랑에 빠지면 다른 일들은 일단 뒷전인 상태가 됩니다. 당신을 나타내는 키워드인 정열, 배려, 헌신과 같은 특성이
+                        연애 스타일에서도 나타나기 때문에 상대가 자신과 같은 노력을 보여주지 않는다면 큰 실망과 상처를 받기도 합니다. 결혼을 결심하면 바로 계획을 시작할 만큼 추진력이 굉장히
+                        강한 편입니다.
+                    </li>
+                    <li>
+                        상대방을 잘 배려하고 이해하는 성격이기 때문에 약간은 소극적인 유형과 잘 맞습니다. 당신은 베풀기 좋아하고 사회성이 좋으므로 연애할 때 예민한 상대의 마음을 잘 알아주는
+                        편입니다.
+                    </li>
+                </ul>
+            </div>
+            <div class="share-wrap">
+                <a href="../">테스트 하러 가기!</a>
+            </div>
+        </article>
+    </section>
+</body>
+
+</html>

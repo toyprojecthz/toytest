@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <div data-include-path="../inc/head.html"></div>
+    <script>
+        window.addEventListener('load', function () {
+            var allElements = document.getElementsByTagName('*');
+            Array.prototype.forEach.call(allElements, function (el) {
+                var includePath = el.dataset.includePath;
+                if (includePath) {
+                    var xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function () {
+                        if (this.readyState == 4 && this.status == 200) {
+                            el.outerHTML = this.responseText;
+                        }
+                    };
+                    xhttp.open('GET', includePath, true);
+                    xhttp.send();
+                }
+            });
+        });
+    </script>
+    <title>연예유형 테스트 Ver. 1.0 결과는?!</title>
+</head>
+
+<body>
+    <section id="result" class="result-wrap">
+        <article class="cnt-inner">
+            <div id="resultImg" class="img"><img src="../img/image-9.jpg" alt=""></div>
+            <div class="resultTitle">
+                <h3>나의 궁합 코드 : 0101</h3>
+                <br>
+                <p>나랑 잘 맞는 코드 : 1110, 1100 / 안 맞는 코드 : 1011</p>
+            </div>
+            <div class="resultDesc">
+                <ul>
+                    <li>
+                        이성에게 끼 부리는 방법과 요령에 있어서 도가 튼 사람이기 때문에 이성을 꼬시기를 잘하고 썸도 잘 탑니다. 지적이면서 허세 없는 이성을 좋아하고 연애할 때는 서로의 사생활을
+                        존중하는 연애를 원하는 편입니다. 내가 먼저 관심이 가는 사람에게 다가가는 건 재밌고 즐겁지만, 누군가 먼저 다가오거나 너무 잘해주면 부담을 많이 느끼는 타입입니다.
+                    </li>
+                    <li>
+                        박학다식하고 다양한 분야에 흥미를 갖는 사람과 궁합이 잘 맞으며 본인과 똑같이 지적인 열망이 크고 자신감이 있는 사람과는 천생연분입니다
+                    </li>
+                </ul>
+            </div>
+            <div class="share-wrap">
+                <a href="../">테스트 하러 가기!</a>
+            </div>
+        </article>
+    </section>
+</body>
+
+</html>

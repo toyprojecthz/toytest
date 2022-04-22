@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <div data-include-path="../inc/head.html"></div>
+    <script>
+        window.addEventListener('load', function () {
+            var allElements = document.getElementsByTagName('*');
+            Array.prototype.forEach.call(allElements, function (el) {
+                var includePath = el.dataset.includePath;
+                if (includePath) {
+                    var xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function () {
+                        if (this.readyState == 4 && this.status == 200) {
+                            el.outerHTML = this.responseText;
+                        }
+                    };
+                    xhttp.open('GET', includePath, true);
+                    xhttp.send();
+                }
+            });
+        });
+    </script>
+    <title>연예유형 테스트 Ver. 1.0 결과는?!</title>
+</head>
+
+<body>
+    <section id="result" class="result-wrap">
+        <article class="cnt-inner">
+            <div id="resultImg" class="img"><img src="../img/image-3.jpg" alt=""></div>
+            <div class="resultTitle">
+                <h3>나의 궁합 코드 : 1010</h3>
+                <br>
+                <p>나랑 잘 맞는 코드 : 0011, 0001 / 안 맞는 코드 : 0100</p>
+            </div>
+            <div class="resultDesc">
+                <ul>
+                    <li>
+                        상대에게 거의 맞춰주고 인내심이 강한 편입니다. 서운한 건 얘기를 잘 못 하고 왜 이렇게 착하냐는 얘기를 밥 먹듯이 듣습니다. 현모양처 같은 성격 유형이고 상대의 기분이 안
+                        좋아 보일 때면 괜히 내가 뭘 잘못한 것 같아 걱정하는 성격입니다.
+                    </li>
+                    <li>
+                        감각적인 유형과는 궁합이 좋은 편이지만 직관적이고 감정적인 사람과는 학을 떼는 편입니다. 또한 편견이 있고 허세가 있는 사람을 극혐하기 때문에 유하고 겸손한 성격과 잘
+                        맞습니다.
+                    </li>
+                </ul>
+            </div>
+            <div class="share-wrap">
+                <a href="../">테스트 하러 가기!</a>
+            </div>
+        </article>
+    </section>
+</body>
+
+</html>

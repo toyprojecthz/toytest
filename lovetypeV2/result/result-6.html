@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <div data-include-path="../inc/head.html"></div>
+    <script>
+        window.addEventListener('load', function () {
+            var allElements = document.getElementsByTagName('*');
+            Array.prototype.forEach.call(allElements, function (el) {
+                var includePath = el.dataset.includePath;
+                if (includePath) {
+                    var xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function () {
+                        if (this.readyState == 4 && this.status == 200) {
+                            el.outerHTML = this.responseText;
+                        }
+                    };
+                    xhttp.open('GET', includePath, true);
+                    xhttp.send();
+                }
+            });
+        });
+    </script>
+    <title>연예유형 테스트 Ver. 1.0 결과는?!</title>
+</head>
+
+<body>
+    <section id="result" class="result-wrap">
+        <article class="cnt-inner">
+            <div id="resultImg" class="img"><img src="../img/image-6.jpg" alt=""></div>
+            <div class="resultTitle">
+                <h3>나의 궁합 코드 : 1101</h3>
+                <br>
+                <p>나랑 잘 맞는 코드 : 0100, 0000 / 안 맞는 코드 : 0011</p>
+            </div>
+            <div class="resultDesc">
+                <ul>
+                    <li>
+                        오글거림과 허세를 싫어하고 밀당을 극혐하는 타입입니다. 상대의 다정함과 따뜻함보다는 재치에 더 끌리는 편이며 연인에게 딱히 의존하려 하지 않는 독립적인 성향을 보입니다.
+                        이성을 볼 때 외모와 성격을 많이 보는 편인데 무조건 이쁘고 잘생긴 사람을 좋아한다기보다는 본인만의 외모 취향이 확고한 편이라 이상형의 모습이 극히 주관적일 수 있습니다.
+                        기념일에 꽃 같은 실용성 없는 선물을 받는 걸 싫어하며 연애를 할 때도 본인의 일과 사생활에 지장을 받는 것을 아주 싫어합니다.
+                    </li>
+                    <li>
+                        감정적인 이해와 공감보다는 현실적이고 논리적인 것에 관심을 두는 현실적인 상대와 궁합이 잘 맞습니다. 하지만 연애, 사랑이 1순위가 아닌 편이며 연애와 어울리지 않는 부분
+                        성향이 있으므로, 독신주의자가 은근히 많은 편입니다.
+                    </li>
+                </ul>
+            </div>
+            <div class="share-wrap">
+                <a href="../">테스트 하러 가기!</a>
+            </div>
+        </article>
+    </section>
+</body>
+
+</html>

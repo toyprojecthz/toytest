@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <div data-include-path="../inc/head.html"></div>
+    <script>
+        window.addEventListener('load', function () {
+            var allElements = document.getElementsByTagName('*');
+            Array.prototype.forEach.call(allElements, function (el) {
+                var includePath = el.dataset.includePath;
+                if (includePath) {
+                    var xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function () {
+                        if (this.readyState == 4 && this.status == 200) {
+                            el.outerHTML = this.responseText;
+                        }
+                    };
+                    xhttp.open('GET', includePath, true);
+                    xhttp.send();
+                }
+            });
+        });
+    </script>
+    <title>연예유형 테스트 Ver. 1.0 결과는?!</title>
+</head>
+
+<body>
+    <section id="result" class="result-wrap">
+        <article class="cnt-inner">
+            <div id="resultImg" class="img"><img src="../img/image-14.jpg" alt=""></div>
+            <div class="resultTitle">
+                <h3>나의 궁합 코드 : 0001</h3>
+                <br>
+                <p>나랑 잘 맞는 코드 : 1010, 1000 / 안 맞는 코드 : 1111</p>
+            </div>
+            <div class="resultDesc">
+                <ul>
+                    <li>
+                        적응력이 강하고 문제해결 능력이 뛰어난 편이며 무겁고 진중한 관계보다는 즐겁고 재밌는 연애를 선호합니다. 자유로운 영혼을 갖고 있기 때문에 상대가 나를 구속하거나 나의
+                        문제해결 방식에 대해 훈수를 두는 것을 극도로 싫어합니다. 매사에 열정적인 만큼 애정 표현이나 스킨쉽에도 적극적인 편입니다.
+                    </li>
+                    <li>
+                        공감과 배려가 몸에 배어 있는 사람과 궁합이 잘 맞으며 그 상대가 정신적 지주가 될 가능성이 큽니다. 하지만 어떤 유형이든 당신을 구속하려 들거나 통제하려 한다면 큰 갈등이
+                        발생할 수 있으므로 당신을 자연 방생 할 만큼의 그릇을 가진 사람을 만나는 것이 좋습니다.
+                    </li>
+                </ul>
+            </div>
+            <div class="share-wrap">
+                <a href="../">테스트 하러 가기!</a>
+            </div>
+        </article>
+    </section>
+</body>
+
+</html>
