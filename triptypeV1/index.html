@@ -41,7 +41,8 @@
                 <h2>나와 어울리는<b>휴양지</b>는 어디?!</h2>
                 <p>지긋지긋 코로나!<br><b>마스크 벗고 어디론가 떠고싶지 않나요?<br>그래서 준비한 나와 어울리는 휴양지 테스트~!</p>
                 <span>(소요시간 : 5분)</span>
-                <a href="javascript:begin()" class="common-btn"><b>테스트 시작하기</b><span>총  <i id="CounterVisitor"></i>명이 참여했어요</span></a>
+                <a href="javascript:begin()" class="common-btn"><b>테스트 시작하기</b><span>총 <i id="CounterVisitor"></i>명이
+                        참여했어요</span></a>
             </section>
             <section id="qna" class="qna-wrap">
                 <div class="status-wrap">
@@ -77,6 +78,17 @@
             </section>
         </div>
     </div>
+    <script>
+        var n = localStorage.getItem('on_load_counter');
+        if (n === null) {
+            n = 0;
+        }
+
+        // localStorage.setItem("on_load_counter", n);
+
+        var visitorContainer = document.getElementById('CounterVisitor')
+        visitorContainer.innerHTML = n;
+    </script>
     <script src="../common/js/lovetypeV1-data.js"></script>
     <script src="../common/js/lovetypeV1-start.js"></script>
     <script src="../common/js/lovetypeV1-share.js"></script>
