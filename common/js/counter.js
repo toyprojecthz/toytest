@@ -5,7 +5,6 @@ if (n === null) {
     n = 0;
 }
 n++;
-console.log(n)
 
 localStorage.setItem("on_load_counter", n);
 
